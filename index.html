@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#ff7a00">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="My Apps">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./style.css">
+  <title>My Apps</title>
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Welcome</p>
+        <h1 id="userName">Guest</h1>
+        <p class="status">Your personal apps in one place</p>
+      </div>
+      <div class="avatar" id="avatar">G</div>
+    </header>
+
+    <section class="content">
+      <div class="intro">
+        <h2>Your Apps</h2>
+        <p>Choose an app to continue. Your app data stays separate.</p>
+      </div>
+
+      <section class="grid" aria-label="Your apps">
+        <a class="card" href="#" data-app="birthday">
+          <div class="icon">🎂</div>
+          <h3>Birthday Reminder</h3>
+          <p>Manage birthdays, wishes, calendar and reminders.</p>
+          <span class="open">Open Birthday Reminder <b>→</b></span>
+        </a>
+
+        <a class="card japa" href="#" data-app="japa">
+          <div class="icon">ॐ</div>
+          <h3>Naam Jaap Counter</h3>
+          <p>Continue mantra counting, goals and history.</p>
+          <span class="open">Open Naam Jaap Counter <b>→</b></span>
+        </a>
+      </section>
+
+      <section class="profile">
+        <label for="nameInput">Your name</label>
+        <div class="profile-row">
+          <input id="nameInput" maxlength="80" placeholder="Enter your name">
+          <button id="saveName" type="button">Save</button>
+        </div>
+        <small>Name is stored only on this device and is passed to the selected app in the URL fragment.</small>
+      </section>
+
+      <section class="privacy">
+        <strong>🔒 Separate apps, separate data</strong>
+        <span>This Hub does not combine Birthday Reminder contacts with Naam Jaap activity.</span>
+      </section>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
